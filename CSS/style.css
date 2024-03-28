@@ -1,0 +1,816 @@
+@import 'utility.css';
+
+* {
+    /*universal*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing: antialiased;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary: #3DCFD3;
+    --secondary: #070606;
+    --dark: #161616;
+    --pure: #ffffff;
+    --text: #1f1f1f;
+    --light: #f2f2f2;
+    --grey: rgb(144, 144, 144);
+}
+
+header {
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+    /* height: 86vh; */
+}
+
+.container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* text of the navigation bar  */
+header nav .left a {
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all ease 0.7s;
+    font-size: 1rem;
+}
+
+/* hover effect  */
+header nav .left a:hover {
+    color: var(--primary);
+}
+
+header nav {
+    padding: 2rem 0;
+}
+
+.first-btn {
+    margin-left: 6rem;
+}
+
+/* pic of the navigation or logo of the portfolio */
+.logo {
+    margin-right: 3rem;
+}
+
+/* section or content of the header  */
+.hero {
+    padding: 3rem 0;
+}
+
+/* image of mine  */
+.hero .left img {
+    width: 400px;
+    filter: grayscale(100) contrast(1.2);
+
+}
+
+/* text of the header section */
+.hero .right {
+    color: var(--pure);
+}
+
+.hero .right h6 {
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1 {
+    font-size: 5rem;
+    font-weight: 200;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span {
+    color: var(--primary);
+}
+
+.hero .right p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+
+.hero .right {
+    margin-top: -6rem;
+}
+
+/* end of header section  */
+section.about {
+    padding: 6rem 0;
+}
+
+/* picture and left side of section/about me  */
+section.about .about-me {
+    height: 450px;
+    filter: grayscale(0.6);
+}
+
+/* right side of section/about me  */
+
+/* text of right section  */
+section.about h1 {
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+section.about h1 span {
+    color: var(--primary);
+}
+
+section.about h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+section.about p {
+    font-family: 'Lato', sans-serif;
+    color: var(--grey);
+    margin-bottom: 6rem;
+}
+
+/* social media platform and logo  */
+.social-media a {
+    background-color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .5s ease;
+}
+
+.social-media a:hover {
+    background-color: var(--primary);
+}
+
+/* img size  */
+
+.social-media a img {
+    width: 80%;
+    padding: 0.5rem;
+}
+
+.social-media>:nth-child(2) img {
+    width: 60%;
+}
+
+/* starting service section  */
+/* heading  */
+.section-heading {
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.section-heading span {
+    color: var(--primary);
+}
+
+/* paragraph  */
+.section-heading+p {
+    color: var(--text);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+
+section.services {
+    background-color: var(--light);
+    padding: 6rem;
+}
+
+/* wrapper for convenient  */
+section.services .card-wrapper {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+}
+
+/* card to align in grid  */
+section.services .card-wrapper .card {
+    background-color: var(--pure);
+    padding: 3rem 2rem;
+    padding-top: 5rem;
+    text-align: center;
+    position: relative;
+    transition: all .6s ease;
+}
+
+/* hover effect if service section  */
+section.services .card-wrapper .card:hover {
+    background-color: var(--dark);
+}
+
+section.services .card-wrapper .card:hover h2,
+section.services .card-wrapper .card:hover p {
+    color: var(--pure);
+}
+
+/* image of card  */
+section.services .card-wrapper .card img {
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70px;
+    background-color: var(--primary);
+    padding: 2px 2px;
+}
+
+/* heading of content of card or service section  */
+section.services .card-wrapper .card h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* content of card of service section  */
+section.services .card-wrapper .card p {
+    font-family: 'Lato', sans-serif;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* end of service section  */
+
+/* starting freelancing section  */
+/* conatiner of freelancing section  */
+section.freelancer {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/camera.png);
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+    padding: 10rem;
+    padding-bottom: 14rem;
+
+}
+
+/* heading of freelancing section  */
+section.freelancer h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* content of freelancing section  */
+section.freelancer p {
+    margin-bottom: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/* end of freelancing section  */
+/* starting review section  */
+section.review {
+    margin-top: 6rem;
+}
+
+/* image of review section  */
+section.review .slider .slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+/* slide card  */
+section.review .slider .slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10rem;
+}
+
+/* content of slide card */
+section.review .slider .slide p {
+    font-family: 'Lato', sans-serif;
+    color: var(--grey);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+/* Name of the reviewer  */
+section.review .slider .slide span {
+    font-size: 0.8rem;
+}
+
+/* dots of the slider declared in JS  */
+section.review .slider-dots .dots {
+    list-style: none;
+    display: flex !important;
+    justify-content: center;
+}
+
+/* dots  */
+section.review .slider-dots {
+    margin-top: 3rem;
+}
+
+/* button of the slider  */
+section.review .slider-dots button {
+    font-size: 0;
+    width: 8px;
+    height: 5px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background-color: var(--grey);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+/* active dots  */
+section.review .dots li.slick-active button {
+    background-color: var(--primary);
+    width: 20px;
+
+}
+
+/* starting skill section  */
+section.skill {
+    /* padding: 2rem 30rem; */
+    margin: 8rem auto;
+    flex-direction: column;
+}
+
+/* heading of skill section  */
+section.skill h1 {
+    color: var(--text);
+    font-size: 3rem;
+    font-family: 'Poppins';
+    margin-bottom: 4rem;
+}
+
+/* container of skill section  */
+section.skill .container {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    background-color: var(--pure);
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+/* .skill-box / card of skill section */
+section.skill .container .skill-box {
+    width: 100%;
+    margin: 25px 0;
+}
+
+/* title i.e HTML CSS  */
+section.skill .container .skill-box .title {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 1.9rem;
+}
+
+/* bar of skill bar  */
+section.skill .container .skill-box .skill-bar {
+    width: 100%;
+    height: 8px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 6px;
+}
+
+/* applying color and percentage ratio to skill bar  */
+.skill-bar .skill-per {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background-color: var(--primary);
+    animation: progress 2s ease-in-out forwards;
+}
+
+/* applying color and percentage ratio of css  */
+.skill-per.css {
+    width: 75%;
+}
+
+/* applying color and percentage ratio of JS  */
+.skill-per.javascript {
+    width: 9%;
+}
+
+/* applying color and percentage ratio of Bootstrap  */
+.skill-per.bootstrap {
+    width: 47%;
+}
+
+/* applying animation to the percentage bar  */
+@keyframes progress {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* designing the number of percentage  */
+.skill-per .tooltip {
+    position: absolute;
+    right: -20px;
+    top: -35px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--pure);
+    padding: 2px 6px;
+    border-radius: 3px;
+    background-color: var(--primary);
+    z-index: 1;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    background-color: var(--primary);
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+}
+
+/* starting project section or work section  */
+section.work {
+    background-color: var(--light);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+    padding: 5rem 0;
+    padding-bottom: 12rem;
+}
+
+section.work .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+section.work .card-wrapper .card {
+    position: relative;
+    height: 250px;
+}
+
+section.work .card-wrapper .card img {
+    height: 100%;
+    width: 100%;
+}
+
+section.work .card-wrapper .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(61, 207, 211, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light);
+    cursor: pointer;
+    transition: all .5s ease;
+    opacity: 0;
+}
+
+section.work .card-wrapper .card:hover .overlay {
+    opacity: 1;
+}
+
+section.work .card-wrapper .card .overlay a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+/* contact section  */
+section.contact .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+section.contact .card-wrapper .card {
+    text-align: center;
+}
+
+section.contact .card-wrapper .card img {
+    width: 80px;
+    margin-bottom: 3rem;
+}
+
+section.contact .card-wrapper .card h1 {
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+section.contact .card-wrapper .card h6 {
+    font-size: 1rem;
+    color: var(--grey);
+    font-weight: 400;
+    margin-bottom: 4rem;
+}
+
+form {
+    width: 80%;
+    margin: auto;
+    /* margin-top: 5rem; */
+    border: 1px solid var(--light);
+    padding: 5rem 1rem;
+    box-shadow: 6px 6px 15px var(--primary);
+}
+
+section.contact .input-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+section.contact .input-wrap2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section.contact .input-wrap2 textarea {
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    font-size: 0.9rem;
+    outline: none;
+}
+
+section.contact input {
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    font-size: 0.9rem;
+    outline: none;
+}
+
+section.contact .btn-wrapper {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer {
+    background-color: var(--dark);
+    text-align: center;
+    padding: 1rem 0 1.2rem 0;
+    margin-top: 5rem;
+}
+
+footer img {
+    width: 30px;
+}
+
+footer .footer-social>:first-child img {
+    width: 20px;
+}
+
+footer .footer-social a {
+    margin-right: 1rem;
+}
+
+footer .footer-logo {
+    margin-bottom: 1rem;
+    width: 200px;
+}
+
+.copyright {
+    margin-top: .5rem;
+    color: var(--grey);
+}
+
+
+.site-main-wrapper {
+    position: relative;
+}
+
+.hamberger {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+.hamberger img {
+    width: 30px;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: var(--light);
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: all .5s ease-in-out;
+}
+
+.open {
+    transform: translateX(0);
+}
+
+.times {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+.times img {
+    width: 30px;
+}
+
+.mobile-nav ul {
+    list-style: none;
+}
+
+.mobile-nav ul li a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+@media (max-width:1024px) {
+    header {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
+    }
+
+    header #main-nav {
+        display: none;
+    }
+    .hamberger{
+        display: block;
+    }
+
+    .hero .left img {
+        width: 260px;
+    }
+
+    .hero .right h1 {
+        font-size: 3rem;
+    }
+
+    .hero {
+        padding-top: 10rem;
+    }
+
+    section.about .about-me {
+        height: 360px;
+        margin-top: 5rem;
+    }
+
+    section.services .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section.work {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 97%, 0 100%);
+    }
+    section.work .card-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+@media(max-width:576px) {
+    .hero {
+        flex-direction: column;
+    }
+
+    header {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95%, 0 100%);      
+     background: linear-gradient(to bottom,rgba(0,0,0,0.8), black);
+
+       
+    }
+
+    .hero .right {
+        position: absolute;
+        top: 260px;
+        padding: 0 1rem;
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    }
+
+    .hero .left img {
+        transform: scaleX(-1);
+    }
+
+    .hero .left {
+        margin-top: -5rem;
+        margin-right: -13rem;
+        padding-bottom: 10rem;
+    }
+
+    .about-inner-wrap {
+        display: grid;
+        margin-top: -5rem;
+    }
+    .about-img{
+        margin: auto;
+    }
+    .about .about-right{
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .about .about-right .social-media{
+            justify-content: center;
+            margin-top: -2rem;
+    }
+section.services{
+    padding:1.5rem;
+}
+section.services .card-wrapper {
+    margin-top: 7rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 3.5rem;
+}
+section.freelancer{
+    padding:5rem 1rem;
+    padding-bottom: 7rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 77% 90%, 0 100%);
+}
+section.freelancer h1{
+    line-height: 1.2;
+    font-size: 1.5rem;
+}
+
+section.review .slider .slide{
+    padding: 0 0;
+}
+.section-heading + p{
+    margin-bottom: 2rem;
+}
+section.skill h1{
+margin-bottom: 1rem;
+}
+section.work{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 29% 99%, 0 100%);
+}
+section.work .card-wrapper{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+}
+section.contact .card-wrapper{
+    grid-template-columns: repeat(1, 1fr);
+}
+section.contact .input-wrap{
+    grid-template-columns: repeat(1, 1fr);
+}
+form{
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+section.contact .card-wrapper{
+    gap: 1.5rem;
+}
+section.contact .card-wrapper .card{
+    border: 1px solid var(--light);
+}
+section.contact .card-wrapper .card h6{
+    margin-bottom: 1rem;
+}
+}
