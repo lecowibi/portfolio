@@ -313,17 +313,18 @@
                 <h6>Kathmandu, Kapan , TenzingChowk</h6>
             </div>
         </div>
-        <form action="">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="apikey" value="e09df605-6e29-4686-b128-59205455054a">
             <div class="input-wrap">
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
+                <input type="text" name="name" placeholder="Your Name" required>    
+                <input type="email" name="e-mail" placeholder="Your Email" required>
             </div>
             <div class="input-wrap2">
-                <input type="text" placeholder="Your Subject...">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message...."></textarea>
+                <input type="text" name="subject" placeholder="Your Subject..." required>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message...." required></textarea>
             </div>
             <div class="btn-wrapper">
-                <button class="btn btn-primary">Send Message</button>
+                <button class="btn btn-primary" type="submit">Send Message</button>
             </div>
         </form>
     </section>

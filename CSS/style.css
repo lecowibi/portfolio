@@ -33,7 +33,7 @@ header {
 }
 
 .container {
-    max-width: 1152px;
+    /* max-width: 1152px; */
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -719,6 +719,7 @@ footer .footer-logo {
 @media(max-width:576px) {
     .hero {
         flex-direction: column;
+        margin-bottom: 10rem;
     }
 
     header {
@@ -739,7 +740,7 @@ footer .footer-logo {
     }
 
     .hero .left {
-        margin-top: -5rem;
+        margin-top: -3rem;
         margin-right: -13rem;
         padding-bottom: 5rem;
     }
@@ -811,5 +812,58 @@ section.contact .card-wrapper .card{
 }
 section.contact .card-wrapper .card h6{
     margin-bottom: 1rem;
+}
+}
+@media(max-width:490px) {
+#Home{
+    height: 70vh;
+    margin: 0;
+    padding: 10px;
+}
+.btn{
+    padding: 0.2rem 1rem;
+}
+.hero .right{
+    left: 0;
+    top: 13rem;
+    height: auto;
+}
+.hero .right h1{
+    font-size: 1.5rem;
+}
+.hero .right h6{
+    font-size: 1rem;
+}
+.hero .left img{
+    display: none;
+}
+.hero .right p {
+    font-size: 0.5rem;
+}
+.hamberger{
+    top: 20px;
+    right: 20px;
+}
+.hamberger img{
+    width: 20px;
+}
+section.services .card-wrapper .card {
+    padding: 2rem 1rem;
+    padding-top: 4rem;
+}
+section.services .card-wrapper .card h2 {
+    font-size: 1rem;
+}
+section.services .card-wrapper .card p{
+    font-size: 0.9rem;
+}
+section.skill .container .skill-box .title{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.skill-per .tooltip{
+    font-size: 0.5rem;
+    padding: 1px 3px;
+    top: -20px;
 }
 }
