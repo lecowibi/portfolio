@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -webkit-font-smotthing: antialiased;
 }
 
 body {
@@ -111,7 +110,7 @@ header nav {
 
 /* end of header section  */
 section.about {
-    padding: 6rem 0;
+    padding: 6rem 5px;
 }
 
 /* picture and left side of section/about me  */
@@ -260,6 +259,9 @@ section.services .card-wrapper .card p {
 section.freelancer {
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/camera.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: var(--pure);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
     padding: 10rem;
@@ -461,7 +463,7 @@ section.skill .container .skill-box .skill-bar {
     transform: translateX(-50%) rotate(45deg);
     z-index: -1;
 }
-
+/* end of skill-bar  */
 /* starting project section or work section  */
 section.work {
     background-color: var(--light);
@@ -469,23 +471,23 @@ section.work {
     padding: 5rem 0;
     padding-bottom: 12rem;
 }
-
+/* wrapper fo project section  */
 section.work .card-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
-
+/* card of the project section  */
 section.work .card-wrapper .card {
     position: relative;
     height: 250px;
 }
-
+/* image of the project section  */
 section.work .card-wrapper .card img {
     height: 100%;
     width: 100%;
 }
-
+/* layer of the project section  */
 section.work .card-wrapper .card .overlay {
     position: absolute;
     top: 0;
@@ -506,28 +508,31 @@ section.work .card-wrapper .card .overlay {
 section.work .card-wrapper .card:hover .overlay {
     opacity: 1;
 }
-
+/* text of the content  */
 section.work .card-wrapper .card .overlay a {
     color: var(--secondary);
     text-decoration: none;
 }
+section.work .card-wrapper .card .overlay a:hover{
+    color: var(--pure);
+}
 
-/* contact section  */
+/* starting contact section  */
 section.contact .card-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
 }
-
+/* card of the contact section  */
 section.contact .card-wrapper .card {
     text-align: center;
 }
-
+/* image of the contact section  */
 section.contact .card-wrapper .card img {
     width: 80px;
     margin-bottom: 3rem;
 }
-
+/* text  of the contact section  */
 section.contact .card-wrapper .card h1 {
     font-weight: 400;
     margin-bottom: 1rem;
@@ -539,7 +544,7 @@ section.contact .card-wrapper .card h6 {
     font-weight: 400;
     margin-bottom: 4rem;
 }
-
+/* end of contact and starting input section  */
 form {
     width: 80%;
     margin: auto;
@@ -580,14 +585,14 @@ section.contact .btn-wrapper {
     text-align: center;
     margin-top: 2rem;
 }
-
+/* end of contact section and starting footer section  */
 footer {
     background-color: var(--dark);
     text-align: center;
     padding: 1rem 0 1.2rem 0;
     margin-top: 5rem;
 }
-
+/* image or logo of the footer social media  */
 footer img {
     width: 30px;
 }
@@ -595,7 +600,7 @@ footer img {
 footer .footer-social>:first-child img {
     width: 20px;
 }
-
+/* text of the footer  */
 footer .footer-social a {
     margin-right: 1rem;
 }
@@ -610,7 +615,7 @@ footer .footer-logo {
     color: var(--grey);
 }
 
-
+/* end of the footer section  */
 .site-main-wrapper {
     position: relative;
 }
@@ -649,7 +654,7 @@ footer .footer-logo {
     transform: translateX(0);
 }
 
-.times {
+.times{
     position: fixed;
     top: 30px;
     right: 30px;
