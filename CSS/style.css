@@ -415,6 +415,9 @@ section.skill .container .skill-box .skill-bar {
 .skill-per.css {
     width: 75%;
 }
+.skill-per.php {
+    width: 60%;
+}
 
 /* applying color and percentage ratio of JS  */
 .skill-per.javascript {
