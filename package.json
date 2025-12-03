@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage": "https://github.com/lecowibi/portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,10 +8,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
+    "deploy": "gh-pages -d build",
     "preview": "vite preview"
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "gh-pages": "^6.3.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
