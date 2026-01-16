@@ -33,7 +33,7 @@ This portfolio is a personal project designed to showcase my skills, projects, a
 
 ### 💼 **Skills Section**
 - Comprehensive display of technical skills
-- Categorized by frontend, backend, and tools
+- Categorized by frontend and tools
 - Interactive skill cards
 
 ### 🚀 **Projects Section**
