@@ -1,6 +1,6 @@
 # 🌟 Bishal Tamang - Portfolio
 
-A modern, responsive portfolio website showcasing my work as a **Full Stack Developer**, **Web Designer**, and **UI/UX Designer**. Built with cutting-edge web technologies and featuring a stunning glassmorphic design with smooth animations.
+A modern, responsive portfolio website showcasing my work as a **Web Designer**, and **UI/UX Designer**. Built with cutting-edge web technologies and featuring a stunning glassmorphic design with smooth animations.
 
 🌐 **Live Site**: [www.bishal-tamang.com.np](https://www.bishal-tamang.com.np/)
 
